@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Hangman</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="start-game">start game</button>
+    <main>
+      <span>
+        <img id="hangmanPic" src="imags/0.png" alt="" />
+      </span>
+      <div class="help">
+        <p>please HELP ME !!</p>
+        <div class="solution gone">
+          <div class="solution-content"></div>
+        <button class="help" id="solution-button">Solutions</button>
+        </div>
+        <div class="hint gone" >
+          <div class="hint-content"></div>
+          <button id=" hint-button">hint</button>
+        </div>
+      </div>
+     
+      <div class="message hidden">
+        <div class="message-box">
+          <img src="imags/danger.jpg" alt="" />
+          <div id="message-content"></div>
+          <button id="try-again">Try Again</button>
+        </div>
+      </div>
+
+      <div class="game">
+        <div id="hangman"></div>
+        <div>
+          <div id="revealed-word"></div>
+          <div id="alphabet">
+            <button class="letter" data-letter="A">A</button>
+            <button class="letter" data-letter="B">B</button>
+            <button class="letter" data-letter="C">C</button>
+            <button class="letter" data-letter="D">D</button>
+            <button class="letter" data-letter="E">E</button>
+            <button class="letter" data-letter="F">F</button>
+            <button class="letter" data-letter="G">G</button>
+            <button class="letter" data-letter="H">H</button>
+            <button class="letter" data-letter="I">I</button>
+            <button class="letter" data-letter="J">J</button>
+            <button class="letter" data-letter="K">K</button>
+            <button class="letter" data-letter="L">L</button>
+            <button class="letter" data-letter="M">M</button>
+            <button class="letter" data-letter="N">N</button>
+            <button class="letter" data-letter="O">O</button>
+            <button class="letter" data-letter="P">P</button>
+            <button class="letter" data-letter="Q">Q</button>
+            <button class="letter" data-letter="R">R</button>
+            <button class="letter" data-letter="S">S</button>
+            <button class="letter" data-letter="T">T</button>
+            <button class="letter" data-letter="U">U</button>
+            <button class="letter" data-letter="V">V</button>
+            <button class="letter" data-letter="W">W</button>
+            <button class="letter" data-letter="X">X</button>
+            <button class="letter" data-letter="Y">Y</button>
+            <button class="letter" data-letter="Z">Z</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
